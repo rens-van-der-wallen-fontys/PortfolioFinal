@@ -1,0 +1,1 @@
+var logoclick = document.getElementById();
