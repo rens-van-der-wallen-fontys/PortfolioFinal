@@ -7,7 +7,7 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
-	background-color: rgb(0, 0, 0, 0.4);
+	background-color: rgb(0, 0, 0, 0.8);
 }
 nav .logo {
 	float: left;
@@ -80,7 +80,7 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
+		background-color: rgba(0,0,0,.9);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;

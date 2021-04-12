@@ -36,93 +36,6 @@ h2 {
 	margin: 0 25px 10px 45%;
 }
 
-header a {
-	margin-top: 200px;
-}
-
-header a img.katana {
-height: 80px;
-width: 80px;
-text-transform: uppercase;
-text-decoration: none;
-color: #fff;
-padding: 1px 3px;
-}
-
-header p {
-padding: 0 30%;
-text-align: center;
-color: #fff;
-}
-
-header{
-	height: 100vh;
-	width: 100%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-}
-
-header.index {
-	background: url("/img/Kimetsu-no-Yaiba.png");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-header.design {
-	background: url("/img/Tanjiro_admiring_the_Wisteria.png");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-header.im {
-	background: url("/img/tanjirou.jpeg");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-header.development {
-	background: url("/img/tanjirou_nezuko.png");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-header.research {
-	background: url("/img/inosukeafb.png");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-header.com {
-	background: url("/img/inosuke.jpg");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-header.sprintx {
-	background: url("/img/zenitsu.jpg");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
 
 @media only screen and (max-width: 767px) and (min-width: 767px){
 	header h1{
@@ -134,9 +47,6 @@ header.sprintx {
 	header a{
 		padding: 5px 15px;
 	}
-	div.background {
-		background: none;
-	}
 	.main-text p{
 		width: 60%;
 		left: 5%;
@@ -146,24 +56,6 @@ header.sprintx {
 
 .color-gray {
 	background-color: rgb(117, 117, 117, 0.5)
-}
-
-div.background {
-	background: url("/img/capture1.png");
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: sticky;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
 }
 
 p {

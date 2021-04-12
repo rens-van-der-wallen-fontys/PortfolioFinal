@@ -4,54 +4,12 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
-    display: flex;
-    margin: 0,0;
 }
 
 p {
+    padding: 2px;
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
-}
-
-div.maincontainer {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-}
-
-div.hero {
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    display: block;
-    margin-bottom: 2px;
-    z-index: 1;
-}
-
-img.image {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-attachment: fixed;
-}
-
-img.logo {
-    height: auto;
-    width: auto;
-}
-
-header {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
 }
 
 .wrapper {
@@ -59,6 +17,24 @@ header {
 }
 
 section {
-    display: block;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+}
+
+div {
+    background: tomato;
+}
+
+div.logo {
+    background: none;
+}
+
+img.logo {
+    height: 90px;
+}
+
+section.header {
+    padding-top: 120px;
 }
