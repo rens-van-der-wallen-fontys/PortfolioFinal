@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo">Interactive media</div>
+        <div class="logo"><img src="/image/RDesignLogo.png" alt="" class="logo"></div>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="Development.html">Development</a></li>
-            <li><a href="Research.html">Research</a></li>
+            <li><a href="research.html">Research</a></li>
             <li><a href="Design.html">Design</a></li>
             <li><a href="Communication.html">Communication</a></li>
             <li><a href="IM.html">Interactive media</a></li>
@@ -26,31 +28,31 @@
         </label>
     </nav>
     
-    <header class="im">
-        <h1>Interactive media</h1>
-        <h2>Rens van der Wallen</h2>
-        <a href="#main"><img class="katana" src="img/katana.png" alt=""></a>
-    </header>
-    
-    <div id="main" class="main-text color-gray">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
-    </div>
-    <div class="main-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
-    </div>
-    <div id="test" class="main-text color-gray">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
-    </div>
-    <div class="main-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
-    </div>
+    <section class="header">
+        <header>  
+                <div>
+                    <h1 class="title">Interactive media</h1>
+                    <hr></hr>
+                </div>
+        </header>
+    </section>
+
+
+    <section class="s90 column pround ac">
+        <div class="tekst w50 pround ml mr">
+            <h1 class="start"><i>POC uitleg</i></h1>
+            <p>
+                Bij deze proof of concept heb ik geprobeerd om een fade animatie te maken. <br>
+                Deze werkt op dit moment nog niet!
+            </p>
+        </div>
+    </section>
+
+
+    <footer class="mt5">
+        <p class="footer">©opyright by Rens van der Wallen</p>
+    </footer>
+
+
 </body>
 </html>

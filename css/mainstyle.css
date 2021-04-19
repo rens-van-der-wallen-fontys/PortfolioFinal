@@ -3,13 +3,16 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    overflow: hidden;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-image: url("/image/Back.png");
 }
 
 p {
     padding: 2px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
+    word-wrap: break-word;
 }
 
 .wrapper {
@@ -18,13 +21,12 @@ p {
 
 section {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: white;
+    margin: 5px;
+    margin-left: 2%;
 }
 
 div {
-    background: tomato;
+    background: none;
 }
 
 div.logo {
@@ -37,4 +39,146 @@ img.logo {
 
 section.header {
     padding-top: 120px;
+    left: 30%;
+    position: relative;
+}
+
+div.aboutme {
+    width: 40vw;
+    background-color: rgba(255, 115, 0, 0.616);
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+div.aboutimg {
+    width: 30vw;
+    right: 0;
+    margin-left: 5px;
+}
+
+.about {
+    padding-top: 5px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+div.afbeelding-design {
+    width: 40vw;
+    height: 50vh;
+    padding-right: 50px;
+}
+
+div.afbeelding-design img{
+    width: inherit;
+    height: inherit;
+}
+
+div.tekst {
+    background-color: rgba(255, 115, 0);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+div.iframe {
+    height: 40vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+h1.kop {
+    text-align: center;
+}
+
+.start {
+    text-align: start;
+}
+
+.s100 {
+    width: 100vw;
+}
+
+.h10 {
+    height: 10vh;
+}
+
+.h20 {
+    height: 20vh;
+}
+
+.s90 {
+    width: 90vw;
+}
+
+.s80 {
+    width: 80vw
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.h25 {
+    height: 25%;
+}
+
+.pround {
+    padding: 20px;
+}
+
+.right {
+    align-content: flex-end;
+}
+
+.special {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/image/call-to-action.jpg");
+}
+
+.mb {
+    margin-bottom: 2%;
+}
+
+.ml {
+    margin-left: auto;
+}
+
+.mr {
+    margin-right: auto;
+}
+
+.mt5 {
+    margin-top: 5%;
+}
+
+.ac {
+    align-content: center;
+    align-items: center;
 }

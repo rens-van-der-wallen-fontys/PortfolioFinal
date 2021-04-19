@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Research</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/fadein.css">
 </head>
 <body>
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo">Research</div>
+        <div class="logo"><img src="/image/RDesignLogo.png" alt="" class="logo"></div>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="Development.html">Development</a></li>
-            <li><a href="Research.html">Research</a></li>
+            <li><a href="research.html">Research</a></li>
             <li><a href="Design.html">Design</a></li>
             <li><a href="Communication.html">Communication</a></li>
             <li><a href="IM.html">Interactive media</a></li>
@@ -26,32 +29,40 @@
         </label>
     </nav>
     
-    <header class="research">
-        <h1>Research</h1>
-        <h2>Rens van der Wallen</h2>
-        <a href="#main"><img class="katana" src="img/katana.png" alt=""></a>
-    </header>
-    <div class="background">
-        <div id="main" class="main-text color-gray">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
+    <section class="header">
+        <header>  
+                <div>
+                    <h1 class="title">Research</h1>
+                    <hr></hr>
+                </div>
+        </header>
+    </section>
+
+
+    <section class="s90 row ml mr" id="apaRichtlijnen">
+        <div class="iframe to-fade-in w40 pround">
+            <iframe src="/pdf/APARichtlijnen.pdf" frameborder="1"></iframe>
         </div>
-        <div class="main-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
+        <div class="tekst to-fade-in w40 pround">
+            <h1 class="kop"><i>APA-Richtlijnen</i></h1>
+            <p>
+                Bij deze opdracht heb ik gewerkt met de apa bron stijl.
+                Dit was voor mij de eerste keer dat ik hiermee aan de slag ging dus ik wist niet zo goed hoe ik dit het best aan kon pakken,
+                nadat ik mijn eerste versie had ingeleverd had ik hier feedback over ontvangen waardoor het voor mij duidelijk werd waar ik vooral op moest letten. 
+                Hierdoor kon ik mijn kort onderzoeks verslag verbeteren, 
+                de hoofd verbeter punten waren letten op verduidelijking van wie de auteur is en wat deze persoon deed in het dagelijks leven.
+                Ook moest ik beter letten op mijn zinsopbouw.
+                <br><br>
+                De volgende keer zal ik dan ook op de hiervoor aangebrachten punten werken door mijn eigen tekst extra zorgvuldig door te lezen voordat ik het inlever.
+            </p>
         </div>
-        <div id="test" class="main-text color-gray">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
-        </div>
-        <div class="main-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quidem voluptatum vitae, unde, ipsam aut.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem nesciunt fuga. Corporis perspiciatis, molestias quod quasi numquam, accusantium quidem, minus quae architecto amet deleniti?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis tempore animi eius quam fugit eos est dolor. Enim, magnam!</p>
-        </div>
-    </div>
+    </section>
+
+
+    <footer class="mt5">
+        <p class="footer">©opyright by Rens van der Wallen</p>
+    </footer>
+
+<script src="/javascript/fade.js"></script>
 </body>
 </html>
