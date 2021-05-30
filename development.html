@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Development</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/menu.css">
-    <link rel="stylesheet" href="/css/mainstyle.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/bideojs.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+        <a id="totop"></a>
+
+        <video id="background_video" loop muted></video>
+        <div id="video_cover"></div>
+        <div id="overlay"></div>
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo"><img src="/image/RDesignLogo.png" alt="" class="logo"></div>
+        <div class="logo"><img src="/image/logo.png" alt="" class="logo"></div>
         <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="development.html">Development</a></li>
@@ -39,18 +48,17 @@
 
 
     <section class="s90 row pround">
-        <div class="iframe w50 pround">
+        <div class="iframe w50 pround" data-aos="fade-right">
                 <iframe height="388" style="width: 100%;" scrolling="no" title="rNjrYRO" src="https://codepen.io/rensert/embed/rNjrYRO?height=388&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                     See the Pen <a href='https://codepen.io/rensert/pen/rNjrYRO'>rNjrYRO</a> by rens
                     (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
                   </iframe>
         </div>
-        <div class="tekst w50 pround">
+        <div class="tekst w50 pround" data-aos="fade-left">
             <h1 class="start"><i>POC uitleg</i></h1>
             <p>
-                Bij deze proof of concept heb ik geprobeerd om een fade animatie te maken. <br>
-                Deze werkt op dit moment nog niet! <br>
-                Hier moet dus nog meer onderzoek voor worden gedaan.
+                Bij deze proof of concept heb ik een fade animatie gebruikt door middel van de AOS (animate on scroll) library.
+                hiervoor heb ik de standaard functies stuk voor stuk getest en gekeken hoe deze werken 
             </p>
         </div>
     </section>
@@ -58,7 +66,7 @@
     <section class="h20 s100 special"></section>
 
     <section class="s90 row pround mb">
-        <div class="tekst w50 pround">
+        <div class="tekst w50 pround" data-aos="fade-right">
             <h1 class="start"><i>Gamification opdracht</i></h1>
             <p>
                 Bij deze opdracht die deel uit maakt van Gamification & storytelling heb ik in c# een prototype gemaakt van een klikspel.
@@ -73,21 +81,114 @@
                 Zo had ik beter een long kunnen gebruiken in plaats van een int. <br> <br>
 
                 Ik kreeg de tip van Nick om mijn game eens te laten zien aan een development docent, dit moet ik op dit moment nog doen.
-
-            
             </p>
         </div>
 
-        <div class="afbeelding-design pround w40 mb">
+        <div class="afbeelding-design pround w40 mb" data-aos="fade-left">
             <img src="/image/development/Clickergame.PNG" alt="">
         </div>
         
+    </section>
+
+    <section class="h20 s100 special"></section>
+
+      <section class="s90 row pround">
+        <div class="iframe w50 pround" data-aos="fade-right">
+            <iframe height="265" style="width: 100%;" scrolling="no" title="dyvoLGx" src="https://codepen.io/rensert/embed/dyvoLGx?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/rensert/pen/dyvoLGx'>dyvoLGx</a> by rens
+                (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
+              </iframe>
+        </div>
+        <div> </div>
+        <div class="tekst w50 pround" data-aos="fade-left">
+            <h1 class="start"><i>POC uitleg</i></h1>
+            <p>
+                Bij deze proof of concept heb ik doormiddel van slick.js een carousel gemaakt.
+                deze carousel werkt anders dan normale carousels omdat deze als er geen image in een van de div's zit hij deze overslaat als item.
+
+                De code achter de carousel is niet super ingewikkeld, en er is voldoende uitleg te vinden over hoe je deze library kan gebruiken.
+                <br><br>
+                Als ik in de toekomst een carousel moet gebruiken zal ik indien mogelijk gebruik maken van slick of een vergelijkbare library.
+            </p>
+        </div>
+    </section>
+
+    <section class="h20 s100 special"></section>
+
+    <section class="s90 row pround">
+      <div class="iframe w50 pround" data-aos="fade-right">
+          <iframe height="265" style="width: 100%;" scrolling="no" title="dyvoLGx" src="https://codepen.io/rensert/embed/dyvoLGx?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+              See the Pen <a href='https://codepen.io/rensert/pen/dyvoLGx'>dyvoLGx</a> by rens
+              (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+      </div>
+      <div> </div>
+      <div class="tekst w50 pround" data-aos="fade-left">
+          <h1 class="start"><i>POC uitleg</i></h1>
+          <p>
+              Bij deze proof of concept heb ik doormiddel van bideo.js een achtergrond video ingeladen.
+              <br><br>
+              De codepen van deze Poc geeft alleen de code weer die gebruikt wordt,
+              Dit is vooral omdat er een video moet worden ingeladen die in mp4 vorm moet staan. <br>
+              Ook zal er een soort thumbnail moeten zijn die ook online staat, deze kon ik niet zomaar online zetten.
+          </p>
+      </div>
+  </section>
+
+
+  <section class="h20 s100 special"></section>
+
+    <section class="s90 row pround">
+        <div class="iframe w50 pround" data-aos="fade-right">
+            <iframe height="265" style="width: 100%;" scrolling="no" title="dyvoLGx" src="https://codepen.io/rensert/embed/dyvoLGx?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/rensert/pen/dyvoLGx'>dyvoLGx</a> by rens
+                (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <div> </div>
+        <div class="tekst w50 pround" data-aos="fade-left">
+            <h1 class="start"><i>POC uitleg</i></h1>
+            <p>
+                Bij deze proof of concept heb ik een werkende music player gemaakt.
+                Deze kan muziek afspelen die in een array staan, hij telt ook hoeveel nummers er in de array staan en geeft dit weer. <br>
+                Verder zit er bij dit proof of concept een glow effect over de naamgeving van de nummers deze was vooral om ervoor te zorgen dat het neon thema terugkwam in onze site.
+             </p>   
+             <h2>Feedback</h2> 
+             <p>
+                Ik heb van verschillende docenten gehoord dat ze deze music player heel erg goed eruit vonden zien. <br>
+                Verder had Bernd-jan als punt dat hij het goed vond dat de volume mixer pas in werking ging als de muisknop losgelaten werd. <br>
+                Hij gaf aan in het verleden gezien te hebben dat mensen dit vergaten waardoor de volume van de player snel van streek te maken was.
+            </p>
+        </div>
     </section>
 
     <footer class="mt5">
         <p class="footer">©opyright by Rens van der Wallen</p>
     </footer>
 
+    <a href="#" class="back-to-top">^</a>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
 
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('.back-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('.back-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+
+       $('.back-to-top').click(function(){
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+            return false;
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/javascript/bideo.js"></script>
+    <script src="/javascript/main.js"></script>
 </body>
 </html>

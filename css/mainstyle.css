@@ -3,9 +3,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    background-attachment: fixed;
     overflow-x: hidden;
-    background-image: url("/image/Back.png");
 }
 
 p {
@@ -39,8 +37,11 @@ img.logo {
 
 section.header {
     padding-top: 120px;
-    left: 30%;
+    align-self: center;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 10px;
 }
 
 div.aboutme {
@@ -78,6 +79,7 @@ div.tekst {
     margin-top: 20px;
     margin-bottom: 50px;
     border-radius: 5px;
+    box-shadow: 7px 10px rgba(255, 115, 0, 0.616);
 }
 
 div.iframe {
@@ -94,7 +96,8 @@ h1.kop {
 }
 
 .start {
-    text-align: start;
+    text-align: justify start;
+    text-justify: inter-character;
 }
 
 .s100 {
@@ -157,10 +160,6 @@ h1.kop {
     margin: 0;
     padding: 0;
     left: 0;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/image/call-to-action.jpg");
 }
 
 .mb {

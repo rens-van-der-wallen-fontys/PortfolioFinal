@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/mainstyle.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/bideojs.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+
+        <video id="background_video" loop muted></video>
+        <div id="video_cover"></div>
+        <div id="overlay"></div>
+
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo"><img src="/image/RDesignLogo.png" alt="" class="logo"></div>
+        <div class="logo"><img src="/image/logo.png" alt="" class="logo"></div>
         <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="development.html">Development</a></li>
@@ -33,14 +42,14 @@
                 <div>
                     <h1 class="title">Portfolio</h1>
                     <hr></hr>
-                    <h2>Rens van der Wallen</h2>
+                    <h2 class="title">Rens van der Wallen</h2>
                 </div>
         </header>
     </section>
 
 
     <section class="about s80" id="About">
-        <div class="aboutme">
+        <div class="aboutme" data-aos="zoom-in-right">
             <h1 class="kop"><i>About me</i></h1>
             <p><b>Welkom op mijn Portfolio pagina!!</b> <br> Ik ben Rens van der Wallen, ik ben 22 jaar oud en ik heb voor dat ik bij het fontys begon een tussenjaar gehad waarin ik fulltime heb gewerkt.
             Hiervoor had ik een opleiding mbo afgerond op het summa college ict. <br> <br>
@@ -49,7 +58,7 @@
             Ook hoop ik mijn communicatie skills te verbeteren.
         </p>
         </div>
-        <div class="aboutimg">
+        <div class="aboutimg" data-aos="zoom-out-down">
             <img src="" alt="foto">
         </div>
     </section>
@@ -60,6 +69,12 @@
             <p class="footer">©opyright by Rens van der Wallen</p>
         </footer>
 
-
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="/javascript/bideo.js"></script>
+        <script src="/javascript/main.js"></script>
 </body>
 </html>
