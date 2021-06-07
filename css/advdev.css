@@ -1,0 +1,33 @@
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+  }
+
+  .slick-carousel {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  
+  .slick-slide {
+    width: 350px;
+  }
+  
+  .slick-next::before, .slick-prev::before {
+    color: turquoise;
+  }
+  
+  img {
+    width: 320px;
+    height: 240px;
+  }
+
+  p.center {
+    text-align: center;
+  }
