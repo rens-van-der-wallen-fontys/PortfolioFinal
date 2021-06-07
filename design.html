@@ -13,13 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-        <video id="background_video" loop muted></video>
         <div id="video_cover"></div>
         <div id="overlay"></div>
 
         <nav>
                 <input id="nav-toggle" type="checkbox">
-                <div class="logo"><img src="/image/logo.png" alt="" class="logo"></div>
+                <div class="logo"><img onclick="location.href='/index.html'" src="/image/logo.png" alt="" class="logo"></div>
                 <ul class="links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="development.html">Development</a></li>
@@ -37,15 +36,16 @@
             </nav>
     
     <section class="header">
-        <header>  
-                <div>
-                    <h1 class="title">Design</h1>
-                    <hr></hr>
-                </div>
-        </header>
     </section>
 
-    <section class="s90 row pround">
+    <section class="s90 column ml mr" id="apaRichtlijnen" data-aos="fade-left">
+            <div>
+                <h1 class="title">Design</h1> 
+                <hr></hr>
+            </div>
+    </section>
+
+    <section class="s90 ml mr row pround">
         <div class="afbeelding-design pround w40" data-aos="fade-right">
             <img src="/image/infographic.png" alt="">
         </div>

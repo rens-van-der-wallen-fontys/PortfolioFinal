@@ -15,12 +15,11 @@
 <body>
         <a id="totop"></a>
 
-        <video id="background_video" loop muted></video>
         <div id="video_cover"></div>
         <div id="overlay"></div>
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo"><img src="/image/logo.png" alt="" class="logo"></div>
+        <div class="logo"><img onclick="location.href='/index.html'" src="/image/logo.png" alt="" class="logo"></div>
         <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="development.html">Development</a></li>
@@ -38,12 +37,14 @@
     </nav>
     
     <section class="header">
-        <header>  
-                <div>
-                    <h1 class="title">Development</h1>
-                    <hr></hr>
-                </div>
-        </header>
+    </section>
+
+    
+    <section class="s90 column ml mr" id="apaRichtlijnen" data-aos="fade-left">
+            <div>
+                <h1 class="title">Development</h1> 
+                <hr></hr>
+            </div>
     </section>
 
 
@@ -58,7 +59,8 @@
             <h1 class="start"><i>POC uitleg</i></h1>
             <p>
                 Bij deze proof of concept heb ik een fade animatie gebruikt door middel van de AOS (animate on scroll) library.
-                hiervoor heb ik de standaard functies stuk voor stuk getest en gekeken hoe deze werken 
+                hiervoor heb ik de standaard functies stuk voor stuk getest en gekeken hoe deze werken. <br><br>
+                Ik weet nu hoe ik op een makkelijke manier een animatie kan tonen als er gescrolled wordt tot een bepaald punt van de pagina.
             </p>
         </div>
     </section>
@@ -117,10 +119,10 @@
 
     <section class="s90 row pround">
       <div class="iframe w50 pround" data-aos="fade-right">
-          <iframe height="265" style="width: 100%;" scrolling="no" title="dyvoLGx" src="https://codepen.io/rensert/embed/dyvoLGx?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-              See the Pen <a href='https://codepen.io/rensert/pen/dyvoLGx'>dyvoLGx</a> by rens
-              (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
-            </iframe>
+        <iframe height="265" style="width: 100%;" scrolling="no" title="wvJprRJ" src="https://codepen.io/rensert/embed/wvJprRJ?height=265&theme-id=dark&default-tab=js,css" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href='https://codepen.io/rensert/pen/wvJprRJ'>wvJprRJ</a> by rens
+            (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
+          </iframe>
       </div>
       <div> </div>
       <div class="tekst w50 pround" data-aos="fade-left">
@@ -130,24 +132,26 @@
               <br><br>
               De codepen van deze Poc geeft alleen de code weer die gebruikt wordt,
               Dit is vooral omdat er een video moet worden ingeladen die in mp4 vorm moet staan. <br>
-              Ook zal er een soort thumbnail moeten zijn die ook online staat, deze kon ik niet zomaar online zetten.
+              Ook zal er een soort thumbnail moeten zijn die ook online staat, deze kon ik niet zomaar online zetten. <br><br>
+
+              De volgende keer dat ik een of misschien wel meerdere achtergrond video's moet gebruiken zal ik dit ook weer via bideo.js doen.
           </p>
       </div>
   </section>
-
 
   <section class="h20 s100 special"></section>
 
     <section class="s90 row pround">
         <div class="iframe w50 pround" data-aos="fade-right">
-            <iframe height="265" style="width: 100%;" scrolling="no" title="dyvoLGx" src="https://codepen.io/rensert/embed/dyvoLGx?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href='https://codepen.io/rensert/pen/dyvoLGx'>dyvoLGx</a> by rens
+            <iframe height="265" style="width: 100%;" scrolling="no" title="KKWZXOo" src="https://codepen.io/rensert/embed/KKWZXOo?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/rensert/pen/KKWZXOo'>KKWZXOo</a> by rens
                 (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
-            </iframe>
+              </iframe>
         </div>
         <div> </div>
         <div class="tekst w50 pround" data-aos="fade-left">
             <h1 class="start"><i>POC uitleg</i></h1>
+            <h3>Let op bij het afspelen zet de volume mixer eerst op het laagst!</h3>
             <p>
                 Bij deze proof of concept heb ik een werkende music player gemaakt.
                 Deze kan muziek afspelen die in een array staan, hij telt ook hoeveel nummers er in de array staan en geeft dit weer. <br>
@@ -161,6 +165,29 @@
             </p>
         </div>
     </section>
+
+    <section class="h20 s100 special"></section>
+  
+      <section class="s90 row pround">
+          <div class="iframe w50 pround" data-aos="fade-right">
+            <iframe height="265" style="width: 100%;" scrolling="no" title="PopEOqp" src="https://codepen.io/rensert/embed/PopEOqp?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/rensert/pen/PopEOqp'>PopEOqp</a> by rens
+                (<a href='https://codepen.io/rensert'>@rensert</a>) on <a href='https://codepen.io'>CodePen</a>.
+              </iframe>
+          </div>
+          <div> </div>
+          <div class="tekst w50 pround" data-aos="fade-left">
+              <h1 class="start"><i>POC uitleg</i></h1>
+                <p>
+                    Simpel glow effect, deze is gemaakt met css en was vooral gebruikt om meer effect in onze website van Ruby mus toe te voegen.
+               </p>   
+               <h2>Feedback</h2> 
+               <p>
+                  Dit glow effect was een goed voorbeeld voor wat we zouden willen gebruiken op onze website maar zou beter moeten worden uitgewerkt. <br>
+                  Dit was de feedback die ik kreeg van mijn groep.
+              </p>
+          </div>
+      </section>
 
     <footer class="mt5">
         <p class="footer">©opyright by Rens van der Wallen</p>
