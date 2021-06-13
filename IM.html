@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Interactive media</title>
@@ -12,81 +13,103 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
+
 <body>
-        <a id="totop"></a>
+    <a id="totop"></a>
 
-        <div id="video_cover"></div>
-        <div id="overlay"></div>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
 
-        <nav>
-                <input id="nav-toggle" type="checkbox">
-                <div class="logo"><img onclick="location.href='/index.html'" draggable="false" src="/image/logo.png" alt="" class="logo"></div>
-                <ul class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="development.html">Development</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="design.html">Design</a></li>
-                        <li><a href="Communication.html">Communication</a></li>
-                        <li><a href="IM.html">Interactive media</a></li>
-                        <li><a href="SprintX.html">Sprint X</a></li>
-                    </ul>
-                <label for="nav-toggle" class="icon-burger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </label>
-            </nav>
-    
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">
+            <img onclick="location.href='/index.html'" draggable="false" src="/image/logo.png" alt="" class="logo">
+        </div>
+        <ul class="links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="development.html">Development</a>
+            </li>
+            <li>
+                <a href="research.html">Research</a>
+            </li>
+            <li>
+                <a href="design.html">Design</a>
+            </li>
+            <li>
+                <a href="Communication.html">Communication</a>
+            </li>
+            <li>
+                <a href="IM.html">Interactive media</a>
+            </li>
+            <li>
+                <a href="SprintX.html">Sprint X</a>
+            </li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
     <section class="header">
     </section>
 
     <section class="s90 column ml mr" id="apaRichtlijnen" data-aos="fade-left">
-            <div>
-                <h1 class="title">Interactive media</h1> 
-                <hr></hr>
-            </div>
+        <div>
+            <h1 class="title">Interactive media</h1>
+            <hr></hr>
+        </div>
     </section>
 
 
     <section class="s90 column pround ac">
         <div class="tekst w50 pround ml mr">
-            <h1 class="start"><i>POC uitleg</i></h1>
+            <h1 class="start">
+                <i>POC uitleg</i>
+            </h1>
             <p>
-                Bij deze proof of concept heb ik geprobeerd om een fade animatie te maken. <br>
-                Deze werkt op dit moment nog niet!
+                Bij deze proof of concept heb ik geprobeerd om een fade animatie te maken.
+                <br> Deze werkt op dit moment nog niet!
             </p>
         </div>
     </section>
 
 
-    <footer class="mt5">
-            <p class="footer">©opyright by Rens van der Wallen</p>
-        </footer>
-    
-        <a href="#" class="back-to-top">^</a>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script>
-    
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-                        $('.back-to-top').fadeIn(200);    // Fade in the arrow
-                    } else {
-                        $('.back-to-top').fadeOut(200);   // Else fade out the arrow
-                    }
-                });
-    
-           $('.back-to-top').click(function(){
-                $('html, body').animate({ scrollTop: 0 }, 'slow');
-                return false;
-            });
-        </script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="/javascript/bideo.js"></script>
-        <script src="/javascript/main.js"></script>
+    <footer>
+        <p class="footer">©opyright by Rens van der Wallen -
+            <a class="githublink" target="_blank" href="https://github.com/rens-van-der-wallen-fontys/PortfolioFinal">Github</a>
+        </p>
+    </footer>
+
+    <a href="#" class="back-to-top">^</a>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('.back-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('.back-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+
+        $('.back-to-top').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+            return false;
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/javascript/bideo.js"></script>
+    <script src="/javascript/main.js"></script>
 
 </body>
+
 </html>

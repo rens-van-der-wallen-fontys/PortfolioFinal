@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -11,71 +12,126 @@
     <link rel="stylesheet" href="/css/bideojs.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/musicplayer.css">
 </head>
+
 <body>
 
-        <video id="background_video" draggable="false" loop muted></video>
-        <div id="video_cover"></div>
-        <div id="overlay"></div>
+    <video id="background_video" draggable="false" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
 
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo"><img onclick="location.href='/index.html'" src="/image/logo.png" draggable="false" alt="" class="logo"></div>
+        <div class="logo">
+            <img onclick="location.href='/index.html'" src="/image/logo.png" draggable="false" alt="" class="logo">
+        </div>
         <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="development.html">Development</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="Communication.html">Communication</a></li>
-                <li><a href="IM.html">Interactive media</a></li>
-                <li><a href="SprintX.html">Sprint X</a></li>
-            </ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="development.html">Development</a>
+            </li>
+            <li>
+                <a href="research.html">Research</a>
+            </li>
+            <li>
+                <a href="design.html">Design</a>
+            </li>
+            <li>
+                <a href="Communication.html">Communication</a>
+            </li>
+            <li>
+                <a href="IM.html">Interactive media</a>
+            </li>
+            <li>
+                <a href="SprintX.html">Sprint X</a>
+            </li>
+        </ul>
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </label>
     </nav>
-    
+
     <section class="header">
     </section>
 
     <section class="s90 column ml mr" id="apaRichtlijnen" data-aos="fade-left">
-            <div>
-                    <h1 class="title">Portfolio</h1>
-                    <hr></hr>
-                    <h2 class="title">Rens van der Wallen</h2>
-            </div>
+        <div>
+            <h1 class="title">Portfolio</h1>
+            <hr></hr>
+            <h2 class="title">Rens van der Wallen</h2>
+        </div>
     </section>
 
 
     <section class="about s80" id="About">
         <div class="aboutme" data-aos="zoom-in-right">
-            <h1 class="kop"><i>About me</i></h1>
-            <p><b>Welkom op mijn Portfolio pagina!!</b> <br> Ik ben Rens van der Wallen, ik ben 22 jaar oud en ik heb voor dat ik bij het fontys begon een tussenjaar gehad waarin ik fulltime heb gewerkt.
-            Hiervoor had ik een opleiding mbo afgerond op het summa college ict. <br> <br>
-
-            Op het fontys hoop ik mijn technische skills te verbeteren met betrekking tot design en research. <br>
-            Ook hoop ik mijn communicatie skills te verbeteren.
-        </p>
+            <h1 class="kop">
+                <i>About me</i>
+            </h1>
+            <p>
+                <b>Welkom op mijn Portfolio pagina!!</b>
+                <br> Ik ben Rens van der Wallen, ik ben 22 jaar oud en ik heb voor dat ik bij het fontys begon een tussenjaar
+                gehad waarin ik fulltime heb gewerkt. Hiervoor had ik een opleiding mbo afgerond op het summa college ict.
+                <br>
+                <br> Op het fontys hoop ik mijn technische skills te verbeteren met betrekking tot design en research.
+                <br> Ook hoop ik mijn communicatie skills te verbeteren.
+            </p>
         </div>
         <div class="aboutimg" data-aos="zoom-out-down">
             <img class="imgselfie" src="/image/selfie/Line man object.png" draggable="false" alt="foto">
         </div>
     </section>
-    
-    
 
-        <footer>
-            <p class="footer">©opyright by Rens van der Wallen</p>
-        </footer>
+    <div class="player">
+        <div class="details">
+            <div class="now-playing">PLAYING x OF y</div>
+            <div class="track-art"></div>
+            <div class="track-name glow">Track Name</div>
+            <div class="track-artist">Track Artist</div>
+        </div>
+        <div class="buttons">
+            <div class="prev-track" onclick="prevTrack()">
+                <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="playpause-track" onclick="playpauseTrack()">
+                <i class="fa fa-play-circle fa-5x glow-button"></i>
+            </div>
+            <div class="next-track" onclick="nextTrack()">
+                <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="/javascript/bideo.js"></script>
-        <script src="/javascript/main.js"></script>
+    <footer>
+        <p class="footer">©opyright by Rens van der Wallen -
+            <a class="githublink" target="_blank" href="https://github.com/rens-van-der-wallen-fontys/PortfolioFinal">Github</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/javascript/bideo.js"></script>
+    <script src="/javascript/main.js"></script>
+    <script src="/javascript/mp.js"></script>
 </body>
+
 </html>
