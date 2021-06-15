@@ -83,7 +83,7 @@ div.afbeelding-design img{
 }
 
 div.tekst {
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0, 0.2); 
     margin-top: 20px;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -203,4 +203,6 @@ h1.kop {
 .githublink {
     text-decoration: none;
     color: darkorange;
+    font-weight: 600;
+    font-size: 18px;
 }
