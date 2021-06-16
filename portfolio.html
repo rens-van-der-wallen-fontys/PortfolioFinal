@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/bideojs.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slideshow.css">
 </head>
 
 <body>
@@ -71,29 +72,78 @@
         <div class="tekst w80 pround ml mr">
             <h1 class="start">Intro</h1>
             <p>
-                    Gedurende het semester heb ik gewerkt aan dit portfolio. <br>
+                    Gedurende het semester heb ik gewerkt aan dit portfolio. 
                     Ik heb dit portfolio gemaakt in visual studio code doormiddel van html, css en javascript.
-                    Ook heb ik gewerkt met Gitkraken als locale git tool en Github als online git tool. <br>
-                    Hierdoor heb ik itteraties kunnen bijhouden van mijn portfolio. <br>
+                    Ook heb ik gewerkt met Gitkraken als locale git tool en Github als online git tool. 
+                    Hierdoor heb ik itteraties kunnen bijhouden van mijn portfolio. 
                     Hieronder ziet u snippets van de itteraties.
             </p>
         </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="/image/portfolio/portfoliodesign1.PNG">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="/image/portfolio/portfoliodesign2.PNG">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="/image/portfolio/portfoliodesign5.PNG">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="/image/portfolio/portfoliodesign3.PNG">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="/image/portfolio/portfoliodesign4.PNG">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
         <div class="tekst w50 ml mr pround">
             <h2 class="start">Feedback review 1</h2>
             <p>
-
+                Beste Rens, Fijn dat je een opzet hebt gemaakt van jouw portfolio. Ben je een fan van Anime? Geef het title-element een duidelijke naam. “Portfolio” zegt helaas niet zo veel. Goed dat je begonnen bent met het maken van javascript poc’s. Heb je feedback gevraagd en gebruik je Git? Laat bij jouw onderzoek ook de keuzeverantwoording zien en de bronnen die je gebruikt hebt. Gebruik voor bronvermelding de APA richtlijnen.
+                Penterman-Overkamp, Lisette L.D.M., Mar 23 at 8:58am
             </p>
         </div>
+
         <div class="tekst w50 ml mr pround">
             <h2 class="start">Feedback review 2</h2>
             <p>
-
+                Beste Rens, Fijn dat je bij Development codesnippets laat zien. Wat ga je doen om de fade animatie werkend te krijgen? Vermeld ook welke feedback je hebt gekregen, wat je met deze feedback hebt gedaan, de bronnen die je gebruikt hebt en link naar Git. Geef het title-element een duidelijke naam. “Portfolio” zegt helaas niet zo veel. Goed dat je de volgende keer extra gaat letten op de zinsbouw. Je kunt bijvoorbeeld ook kijken bij Toolbox Taal op de Portal https://portal.fhict.nl/Studentenplein/ToolboxTaal/SitePages/Home.aspx en schrijfhulp https://portal.fhict.nl/Studentenplein/ToolboxTaal/SiteAssets/korte_handleiding_Schrijfhulp@Fontys.pdf
+                Penterman-Overkamp, Lisette L.D.M., Apr 19 at 4:31pm
             </p>
         </div>
         <div class="tekst w50 ml mr pround">
             <h2 class="start">Feedback review 3</h2>
             <p>
-
+                Beste Rens, De bewegende wolken op jouw portfolio geven een mooi effect. De foto op de home pagina wordt helaas niet getoond. Goed dat je bedacht hebt welke opdrachten je in jouw portfolio gaat zetten. Fijn dat je in het Development deel laat zien dat je met javascript libraries kunt werken, de code en het resultaat laat zien in Codepen. Laat ook iteraties, bronnen, link naar Git, code snippets met uitleg, een werkende demo (op een andere pagina) en de reflectie zien. Toon ook poc’s met basis javascript (dus zonder libraries). Voor de leeruitkomst van Development dien je o.a. verschillende kleinere poc’s te integreren in een grotere applicatie. Weet je al hoe je hieraan gaat werken? Je mag nog meer reflecteren. Zet bij iedere opdracht een korte reflectie.
+                Penterman-Overkamp, Lisette L.D.M., Jun 1 at 9:11am
+            </p>
+        </div>
+        <div class="tekst w50 ml mr pround">
+            <h2 class="start">Feedback review 4</h2>
+            <p>
+                Beste Rens, Goed dat je nagedacht hebt over security. De sfeer van jouw portfolio is veranderd. Komt dat door de afbeelding? Leuk dat je jouw muziek laat horen. De music player ziet er goed uit. Heb je deze gemaakt zonder js libraries? Laat bij Development ook iteraties, bronnen, link naar Git en code snippets met uitleg zien. Goed dat je om feedback hebt gevraagd. Beschrijf op jouw portfolio welke verschillende kleinere poc’s je hebt verwerkt op jouw portfolio. Succes met de afronding!
+                Penterman-Overkamp, Lisette L.D.M., Jun 15 at 9:29am
             </p>
         </div>
     </section>
@@ -143,6 +193,34 @@
     <script>
             function goBack() {
                 window.history.back();
+            }
+        </script>
+         <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
             }
         </script>
 </body>

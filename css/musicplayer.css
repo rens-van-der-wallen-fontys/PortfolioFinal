@@ -1,12 +1,12 @@
   
   .player {
       z-index: 5;
-      bottom: 25%;
+      bottom: 0;
       right: 0;
-      position: absolute;
+      position: relative;
       width: 300px;
       margin-right: 50px;   
-    height: 20vh;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -45,7 +45,7 @@
   
   
   .track-artist {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   .buttons {
@@ -55,7 +55,7 @@
   }
   
   .playpause-track, .prev-track, .next-track {
-    padding: 25px;
+    padding: 15px;
     opacity: 0.8;
   
     transition: opacity .2s;

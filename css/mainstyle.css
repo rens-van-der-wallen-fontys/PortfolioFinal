@@ -52,23 +52,26 @@ div.aboutme {
 }
 
 div.aboutimg {
-    width: 30vw;
-    height: 20vh;
+    width: 40vw;
+    height: auto;
     right: 0;
+    bottom: 0;
     margin-left: 5px;
     top: 200px;
 }
 
 .imgselfie {
-    width: auto;
-    height: 500px;
+    width: 300px;
+    height: auto;
     margin-left: 20%;
+    bottom: 0;
 }
 
 .about {
     padding-top: 5px;
     margin-top: 10%;
     margin-left: 5%;
+    margin-bottom: 0px !important;
 }
 
 div.afbeelding-design {
