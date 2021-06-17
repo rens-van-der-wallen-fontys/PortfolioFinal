@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Onderzoek</title>
+    <title>Ruby mus website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/mainstyle.css">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/bideojs.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slideshow.css">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
 
     <section class="s90 column ml mr" data-aos="fade-left">
         <div>
-            <h1 class="title">Onderzoek Indesign - Illustrator</h1>
+            <h1 class="title">Ruby mus website</h1>
             <hr></hr>
         </div>
     </section>
@@ -76,23 +77,45 @@
                 <i>Opdracht info</i>
             </h1>
             <p>
-                Tijdens sprint X heb ik een onderzoek gedaan naar de verschillen tussen Indesign en Illustrator.
-                 Hiervoor heb ik een onderzoeks document gemaakt.
-                 Bij het menu item sprint x kunt u mijn plan van aanpak bekijken waarin nog meer research staat over hoe ik dit heb aangepakt. 
+                Bij deze opdracht heb ik samen met Twan Sekiris gewerkt aan de website voor ruby mus. 
+                Wij hebben hiervoor een design uitgewerkt die Ruby had goedgekeurd. 
+                Wij hebben deze site met html css en javascript gemaakt.
             </p>
-                <button class="custom-btn btn-7">
-                    <a href="/pdf/Onderzoekidil.pdf" target="_blank">
-                        <span>PDF</span>
-                    </a>
-                </button>
         </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/image/rubywebsite/1.PNG">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="/image/rubywebsite/2.PNG">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="/image/rubywebsite/3.PNG">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
         <div class="tekst w80 pround ml mr">
 
             <h2 class="start">
                 <i>Feedback</i>
             </h2>
             <p>
-                Ziet er goed uit Rens zorg ervoor dat je alles netjes bijhoud voor je documentatie. - Sebastiaan Lefèvre.
+                Ruby vond de site er goed uitzien en was heel enthousiast. 
+                Verder vonden de docenten tijdens de sprint oplevering dat de site er goed uitzag. 
             </p>
         </div>
         <div class="tekst w80 pround ml mr">
@@ -101,13 +124,16 @@
                 <i>Reflectie</i>
             </h2>
             <p>
-                Ik heb nu dankzij het onderzoek een beter beeld gekregen bij wat Indesign en Illustrator zijn. <br>
-                Ik weet nu ook wanneer het slim is om Indesign te gebruiken en wanneer het slim is om Illustrator te gebruiken. <br>
-                
+                Twan en ik zijn blij met wat we hebben neergezet al vonden we het jammer dat we de site niet foutloos hebben kunnen maken. 
+                Zo waren er nog problemen met de grote van het logo en het responsive maken van de pagina. 
+                De volgende keer zal ik beter moeten letten op het gebruik van css tijdens het maken van de website. 
+                Dit zorgde er namelijk voor dat er een probleem ontstond. 
+                Te weinig css bestanden waardoor het moeilijk was om terug te vinden waar iets stond.
             </p>
         </div>
 
     </section>
+
 
     <footer>
         <p class="footer">©opyright by Rens van der Wallen -
@@ -116,6 +142,11 @@
     </footer>
 
     <a href="#" class="back-to-top">^</a>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
 
@@ -140,8 +171,31 @@
     <script src="/javascript/bideo.js"></script>
     <script src="/javascript/main.js"></script>
     <script>
-        function goBack() {
-            window.history.back();
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
     </script>
 </body>
