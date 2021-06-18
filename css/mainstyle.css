@@ -54,16 +54,17 @@ div.aboutme {
 div.aboutimg {
     width: 40vw;
     height: auto;
+    width: 400px;
     right: 0;
     bottom: 0;
-    margin-left: 5px;
+    margin-left: 20%;
+    margin-right: auto;  
     top: 200px;
 }
 
 .imgselfie {
     width: 300px;
     height: auto;
-    margin-left: 20%;
     bottom: 0;
 }
 
@@ -210,3 +211,17 @@ h1.kop {
     font-size: 18px;
 }
 
+.imgheight {
+    height: auto;
+    width: 700px;
+}
+
+.imgheight2 {
+    height: auto;
+    width: 500px;
+}
+
+.imgheight3 {
+    height: auto;
+    width: 300px;
+}
